@@ -7,40 +7,47 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="stylesheet" href="default.css" type="text/css" media="all">
-    <link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="default.css?v2" type="text/css" media="all">
 
     <link rel="icon" href="icon.png" type="image/png">
     <link rel="shortcut icon" href="icon.png" type="image/png">
     <link rel="apple-touch-icon" href="iconhd.png" type="image/png">
 
-    <script defer src="vendor/js-yaml.min.js"></script>
-    <script defer src="app.js"></script>
+    <script defer src="https://unpkg.com/js-yaml@3.12.0/dist/js-yaml.min.js"></script>
+    <script defer src="app.js?v2"></script>
   </head>
   <body>
-    <div class="top">
-      <label class="attach-to-bottom input-file-container">
-        <span>Upload mapping</span>
-        <input type="file" id="uploadMapping" accept=".yml, .yaml">
-      </label>
+    <section class="source">
+      <div class="source__controls">
+        <div class="source__uploader">
+          <label for="uploadMapping">Upload mapping</label>
+          <input type="file" id="uploadMapping" accept=".yml, .yaml">
+        </div>
 
-      <label for="selectMapping" class="visually-hidden">Select mapping</label>
-      <select id="selectMapping"></select>
+        <div class="source__switch">
+          <label for="selectMapping" class="visually-hidden">Select mapping</label>
+          <select id="selectMapping"></select>
+        </div>
+      </div>
 
-      <label for="source" class="visually-hidden">Source text</label>
-      <textarea id="source"
-                autofocus
-                spellcheck="false"
+      <div class="source__input">
+        <label for="source" class="visually-hidden">Source text</label>
+        <textarea id="source"
+                  autofocus
+                  spellcheck="false"
+                  rows="4"
+                  autocapitalize="off"
+                  placeholder="Časovanje"></textarea>
+      </div>
+    </section>
+
+    <section class="target">
+      <label for="textTransliterated" class="visually-hidden">Transliterated text</label>
+      <textarea id="textTransliterated"
                 rows="4"
-                type="text"
-                autocapitalize="off"
-                placeholder="Časovanje"></textarea>
-    </div>
-    <div class="bottom">
-      <span id="textTransliterated"
-            aria-label="Transliterated text"
-            tabindex="0"></span>
-      <span id="placeholderTransliterated">Часованје</span>
-    </div>
-  </body>
+                tabindex="0"
+                readonly
+                placeholder="Часованје"></textarea>
+    </section>
+</body>
 </html>

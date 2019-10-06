@@ -15,37 +15,85 @@
 
 :root {
   background-color: #EBE7E2;
-  font: 400 16px/1.5 'Montserrat', sans-serif;
+  font: 400 16px/1.5 sans-serif;
 }
 
-input, button, select, textarea {
-  font-family: inherit;
-}
-
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
 
-.top, .bottom {
-  padding: 2em 4em;
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
-.top {
+textarea {
+  color: inherit;
+}
+
+.source,
+.target {
+  box-sizing: border-box;;
+  min-height: 50vh;
+}
+
+.source {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #44AA66;
   color: #FFFFFF;
+  padding: 2em 2em 0;
+
   position: relative;
   position: sticky;
   top: 0;
 }
 
-#source, #selectMapping {
+.target {
+  display: flex;
+  padding: 3em 2em 2em;
+  color: #44AA66;
+}
+
+.source__input {
+  display: flex;
+  flex-grow: 1;
+}
+
+.source__controls {
+  flex-grow: 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  order: 1;
+}
+
+.source__uploader {
+}
+
+.source__switch {
+    margin-left: auto;
+    transform: translateY(50%);
+}
+
+#source,
+#textTransliterated,
+#selectMapping {
   border: 0;
   outline: none;
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 0.25em;
+}
+
+#selectMapping:focus {
+  box-shadow: 0 0 4px 2px white;
 }
 
 #selectMapping:empty {
@@ -66,11 +114,6 @@ html, body {
   color: #FFFFFF;
 }
 
-.attach-to-bottom {
-  position: absolute;
-  bottom: 1em;
-}
-
 #selectMapping {
   border: 2px solid #EBE7E2;
   background-color: #44AA66;
@@ -80,31 +123,25 @@ html, body {
   padding: 0 1em;
   text-align: center;
   text-align-last: center;
-  position: absolute;
-  bottom: -1em;
-  right: 1em;
 }
 
-.bottom {
-  padding-top: 3em;
-  color: #44AA66;
+#textTransliterated {
+  flex-grow: 1;
 }
 
-#textTransliterated,
-#placeholderTransliterated {
+#textTransliterated {
   font-size: 2em;
   word-break: break-all;
   white-space: pre-wrap;
   transition: opacity 150ms ease-in-out;
 }
 
-#placeholderTransliterated {
-  color: #CADBC9; /* 0.2 * 44AA66 + 0.8 * EBE7E2 */
-  display: none;
+#textTransliterated:focus {
+  border-bottom: 2px solid #44AA66;
 }
 
-#textTransliterated:empty ~ #placeholderTransliterated {
-  display: inline;
+#textTransliterated::placeholder {
+  color: #CADBC9;
 }
 
 .visually-hidden {
