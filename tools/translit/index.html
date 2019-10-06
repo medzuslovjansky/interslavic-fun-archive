@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Transliterator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="default.css" type="text/css" media="all">
+    <link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (max-width: 480px)">
+
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="iconhd.png" type="image/png">
+
+    <script defer src="vendor/js-yaml.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <label class="attach-to-bottom input-file-container">
+        <span>Upload mapping</span>
+        <input type="file" id="uploadMapping" accept=".yml, .yaml">
+      </label>
+
+      <label for="selectMapping" class="visually-hidden">Select mapping</label>
+      <select id="selectMapping"></select>
+
+      <label for="source" class="visually-hidden">Source text</label>
+      <textarea id="source"
+                autofocus
+                spellcheck="false"
+                rows="4"
+                type="text"
+                autocapitalize="off"
+                placeholder="Časovanje"></textarea>
+    </div>
+    <div class="bottom">
+      <span id="textTransliterated"
+            aria-label="Transliterated text"
+            tabindex="0"></span>
+      <span id="placeholderTransliterated">Часованје</span>
+    </div>
+  </body>
+</html>
