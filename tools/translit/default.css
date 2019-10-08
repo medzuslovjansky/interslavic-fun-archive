@@ -73,12 +73,14 @@ textarea {
   order: 1;
 }
 
-.source__uploader {
+.source__switch {
+  margin-left: auto;
+  transform: translateY(50%);
 }
 
-.source__switch {
-    margin-left: auto;
-    transform: translateY(50%);
+#source,
+#textTransliterated {
+  resize: vertical;
 }
 
 #source,

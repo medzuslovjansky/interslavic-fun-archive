@@ -175,12 +175,12 @@ function parseYaml(str) {
     for (const entry of Object.entries(parsed)) {
       const [name, dictionary] = entry;
       const map = new Map();
-      let maxLength = 1;
+      let maxLength = 0;
 
       for (const key of Object.keys(dictionary)) {
         const value = dictionary[key];
 
-        maxLength = Math.max(value.length, maxLength);
+        maxLength = Math.max(key.length, maxLength);
         map.set(key, value);
 
         const lowerKey = key.toLocaleLowerCase();
