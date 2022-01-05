@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkinterslavic_fun=self.webpackChunkinterslavic_fun||[]).push([[828],{6381:function(t){t.exports=JSON.parse('{"allTagsPath":"/art-Latn-x-interslv-etymolog/articles/tags","slug":"/art-Latn-x-interslv-etymolog/articles/tags/interslavic","name":"interslavic","count":1,"permalink":"/art-Latn-x-interslv-etymolog/articles/tags/interslavic"}')}}]);
