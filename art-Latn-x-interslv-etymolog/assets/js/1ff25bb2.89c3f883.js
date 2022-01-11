@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkinterslavic_fun=self.webpackChunkinterslavic_fun||[]).push([[582],{6396:function(e){e.exports=JSON.parse('{"permalink":"/art-Latn-x-interslv-etymolog/articles","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
