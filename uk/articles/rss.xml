@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Learn Interslavic Language Blog</title>
-        <link>https://interslavic.fun/articles</link>
+        <link>https://interslavic.fun/uk/articles</link>
         <description>Learn Interslavic Language Blog</description>
         <lastBuildDate>Tue, 04 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>uk</language>
         <item>
             <title><![CDATA[Proposal for a refreshed version of the "Scientific Interslavic" alphabet]]></title>
-            <link>https://interslavic.fun/articles/2022/01/04/adam-gola-scientific-revival</link>
-            <guid>https://interslavic.fun/articles/2022/01/04/adam-gola-scientific-revival</guid>
+            <link>https://interslavic.fun/uk/articles/2022/01/04/adam-gola-scientific-revival</link>
+            <guid>https://interslavic.fun/uk/articles/2022/01/04/adam-gola-scientific-revival</guid>
             <pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Proposal for a refreshed version of the "Scientific Interslavic" alphabet and its practical applications.]]></description>
             <content:encoded><![CDATA[<p><strong>Proposal for a refreshed version of the "Scientific Interslavic" alphabet and its practical applications.</strong></p>

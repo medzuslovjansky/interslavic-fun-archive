@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://interslavic.fun/articles</id>
+    <id>https://interslavic.fun/uk/articles</id>
     <title>Learn Interslavic Language Blog</title>
     <updated>2022-01-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://interslavic.fun/articles"/>
+    <link rel="alternate" href="https://interslavic.fun/uk/articles"/>
     <subtitle>Learn Interslavic Language Blog</subtitle>
-    <icon>https://interslavic.fun/img/favicon.ico</icon>
+    <icon>https://interslavic.fun/uk/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Proposal for a refreshed version of the "Scientific Interslavic" alphabet]]></title>
-        <id>https://interslavic.fun/articles/2022/01/04/adam-gola-scientific-revival</id>
-        <link href="https://interslavic.fun/articles/2022/01/04/adam-gola-scientific-revival"/>
+        <id>https://interslavic.fun/uk/articles/2022/01/04/adam-gola-scientific-revival</id>
+        <link href="https://interslavic.fun/uk/articles/2022/01/04/adam-gola-scientific-revival"/>
         <updated>2022-01-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Proposal for a refreshed version of the "Scientific Interslavic" alphabet and its practical applications.]]></summary>
         <content type="html"><![CDATA[<p><strong>Proposal for a refreshed version of the "Scientific Interslavic" alphabet and its practical applications.</strong></p>
